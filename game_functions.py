@@ -202,6 +202,7 @@ def ship_hit(ai_settings, screen, stats, sb, ship, aliens, bullets):
         # Пауза.
         sleep(0.5)
     else:
+        stats.bestscore()
         stats.game_active = False
         pygame.mouse.set_visible(True)
 
